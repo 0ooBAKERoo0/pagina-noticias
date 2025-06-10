@@ -1,6 +1,7 @@
 [build]
-  publish = "."
-  command = "" # No necesitas comando de build para HTML estático
+  command = "npm run build"
+  publish = "/noticias"
+  base = "/"
 
 [[redirects]]
   from = "/*"

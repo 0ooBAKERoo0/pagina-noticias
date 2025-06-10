@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Noticias tecnológicas, últimas novedades en hardware, móviles, gaming y más." />
+<title>Noticias Tecnológicas</title>
+
+<!-- Metatags para SEO y redes sociales -->
+<meta property="og:title" content="Noticias Tecnológicas" />
+<meta property="og:description" content="Últimas noticias en tecnología" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tu-dominio.netlify.app/" />
+<meta property="og:image" content="assets/img/og-image.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" href="/Noticias/assets/img/" />
+
+<!-- Estilos CSS -->
+<link rel="stylesheet" href="/Noticias/assets/css/style.css" />
+
+<!-- Progressive Web App (PWA) -->
+<link rel="manifest" href="./manifest.json" />
+
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a href="./index.html" class="logo">TechNews</a>
+    <ul>
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./categorias.html">Categorías</a></li>
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div id="latest-news">Cargando la última noticia...</div>
+  </section>
+  <section class="news-grid" id="news-grid"></section>
+  
+</main>
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="assets/img/facebook.svg" alt="Facebook" /></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="assets/img/twitter.svg" alt="Twitter" /></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
+  </div>
+  <p>&copy; 2023 TechNews. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/news-loader.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

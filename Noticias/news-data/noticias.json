@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Intel lanza nuevos procesadores",
+    "categoria": "hardware",
+    "fecha": "2023-10-15",
+    "imagen": "intel-14gen.jpg",
+    "resumen": "Nueva generación de CPUs con hasta 24 núcleos",
+    "contenido": "<p>Intel ha presentado hoy su nueva línea de procesadores con mejoras de rendimiento y eficiencia energética...</p>"
+  },
+  {
+    "id": 2,
+    "titulo": "Apple anuncia el iPhone 15",
+    "categoria": "moviles",
+    "fecha": "2023-09-20",
+    "imagen": "iphone15.jpg",
+    "resumen": "El nuevo iPhone 15 llega con carga USB-C y mejoras en cámara.",
+    "contenido": "<p>Apple finalmente adopta el estándar USB-C en su última gama de smartphones, ofreciendo mayor compatibilidad...</p>"
+  }
+]

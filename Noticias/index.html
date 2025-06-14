@@ -20,7 +20,6 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">Tecno<span>News</span></a>
-
             <div class="search-icon">
                 <i class="fas fa-search"></i>
             </div>
@@ -32,8 +31,16 @@
 
     <section class="hero">
         <div class="container">
-            <div id="featured-news" class="featured-news">
-                <!-- Hero con última noticia cargado dinámicamente -->
+            <div class="featured-news">
+                <div class="featured-card">
+                    <img src="assets/img/ia-revolucion.jpg" alt="Revolución IA">
+                    <div class="featured-content">
+                        <span class="category-tag">IA</span>
+                        <h1>La revolución de la IA: Cómo está cambiando nuestra vida diaria</h1>
+                        <p>Descubre las últimas innovaciones en inteligencia artificial que están transformando industrias completas y nuestra forma de interactuar con la tecnología.</p>
+                        <a href="news-detail.html?id=1" class="btn">Leer más</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -41,28 +48,328 @@
     <section class="news-section">
         <div class="container">
             <h2>Últimas Noticias</h2>
-            <div class="category-filters">
-                <button class="btn active" data-category="all">Todas</button>
-                <button class="btn" data-category="ia">IA</button>
-                <button class="btn" data-category="moviles">Móviles</button>
-                <button class="btn" data-category="gaming">Gaming</button>
-                <button class="btn" data-category="hardware">Hardware</button>
-                <button class="btn" data-category="software">Software</button>
-            </div>
-            <div id="news-grid" class="news-grid">
-                <!-- Grid de noticias cargado dinámicamente -->
-            </div>
-        </div>
-    </section>
 
-    <section class="newsletter">
-        <div class="container">
-            <h2>Suscríbete a nuestro Newsletter</h2>
-            <p>Recibe las últimas noticias directamente en tu correo</p>
-            <form id="newsletter-form" action="https://us21.list-manage.com/subscribe/post?u=TU_USER_ID&amp;id=TU_LIST_ID" method="post" target="_blank">
-                <input type="email" name="EMAIL" placeholder="Tu correo electrónico" required />
-                <button type="submit" class="btn">Suscribirse</button>
-            </form>
+            <div class="news-list">
+                <!-- Noticia 1 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/gpt-5.jpg" alt="GPT-5">
+                        <div class="news-details">
+                            
+                            <h3>Ya sabemos en qué parte de 2026 llegará la nueva Siri: Apple ha puesto fecha interna a su gran salto en IA, según Bloomberg</h3>
+                            <p>Apple apunta a primavera de 2026 para lanzar su nueva Siri rediseñada. 
+                               Gurman señala que llegrá con iOS 26.4 si todo avanza como está previsto</p>
+                            <a href="./noti/1.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 2 -->
+                <div class="news-item" data-category="moviles">
+                    <div class="news-content">
+                        <img src="assets/img/samsung-fold.jpg" alt="Samsung Fold">
+                        <div class="news-details">
+                            <h3>Intel y TSMC lideran la revolución de los chips fotónicos. Su problema es que China acaba de meterse de lleno en esta guerra</h3>
+                            <p>Los circuitos integrados fotónicos utilizan fotones para procesar y transmitir información
+                               El tantalato de litio permite fabricar chips fotónicos utilizando los equipos de litografía UVP que tiene China.</p>
+                            <a href="./noti/2.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 3 -->
+                <div class="news-item" data-category="gaming">
+                    <div class="news-content">
+                        <img src="assets/img/nvidia-rtx.jpg" alt="NVIDIA RTX">
+                        <div class="news-details">
+                            <h3>EEUU asegura que Huawei no podrá fabricar más de 200.000 chips de IA en 2025. Sabemos cuál es el motivo</h3>
+                            <p>David Sacks sostiene que China va solo entre tres y seis meses detrás de EEUU en modelos de IA
+                               La gran esperanza de China es tener lo antes posible sus propios equipos de litografía UVE. Y parece que están cerca.</p>
+                            <a href="./noti/3.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 4 -->
+                <div class="news-item" data-category="software">
+                    <div class="news-content">
+                        <img src="assets/img/windows12.jpg" alt="Windows 12">
+                        <div class="news-details">
+                            <h3>Nos preparamos para despedir Windows 10, pero parte del control aéreo de EEUU aún funciona con disquetes y Windows 95</h3>
+                            <p>Parte del sistema aéreo de EEUU funciona con tecnologías obsoletas
+                               La FAA ha reconocido que decenas de sistemas son ya “insostenibles”.</p>
+                            <a href="./noti/4.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 5 -->
+                <div class="news-item" data-category="hardware">
+                    <div class="news-content">
+                        <img src="assets/img/quantum.jpg" alt="Computación Cuántica">
+                        <div class="news-details">
+                            <h3>Málaga va a ser uno de los dos epicentros de la investigación europea en chips. Lo sorprendente es cómo lo ha logrado</h3>
+                            <p>El centro malagueño de IMEC dará empleo a 200 personas de alta cualificación
+                               En 2035 los fabricantes de circuitos integrados iniciarán la producción a gran escala de chips de 3 ángstroms (0,3 nm).</p>
+                            <a href="./noti/5.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>IBM va a construir el ordenador cuántico 'Starling' en un nuevo centro de datos que estará alojado en Nueva York (EEUU)
+                                Esta máquina aglutinará 200 cúbits lógicos que le permitirán ejecutar 100 millones de operaciones cuánticas.</p>
+                            <a href="./noti/6.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Liquid Glass, iOS 26, macOS Tahoe, watchOS 26, la nueva app Games y todas las novedades que dejó la WWDC 2025 de Apple</h3>
+                            <p>Apple ha rediseñado sus sistemas de arriba abajo
+                               También ha presentado muchas otras novedades
+                               Aquí encontrarás todo lo que dejó la WWDC 2025.</p>
+                            <a href="./noti/7.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Corea del Norte se ha quedado sin internet este fin de semana. La pregunta es quién usa internet en este país</h3>
+                            <p>Varios expertos defienden que el origen del problema reside en Corea del Norte y no en un ciberataque externo
+                               Este país está conectado al exterior solo a través de dos enlaces de fibra óptica con China y Rusia.</p>
+                            <a href="./noti/8.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Tesla quiere mantener en secreto ciertos datos de accidentes con sus coches. Un juez decidirá si deben hacerse públicos</h3>
+                            <p>The Washington Post quiere acceder a la hoja de cálculo completa de incidentes con sistemas de Tesla
+                               Un tribunal federal de Estados Unidos debe decidir si esos informes se hacen públicos o siguen bajo llave.</p>
+                            <a href="./noti/9.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Por si la guerra de los chips no tenía suficientes contendientes, una nueva empresa se ha sumado a la carrera: SpaceX</h3>
+                            <p>El Gobierno de EEUU pretende fabricar el 28% de los chips de vanguardia del planeta en 2032
+                               SpaceX ha decidido ampliar su planta de Texas para poner a punto el equipamiento que necesita para empaquetar chips.</p>
+                            <a href="./noti/10.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Huawei se está poniendo imparable. Todo lo que está haciendo persigue batir a NVIDIA en IA tanto en China como más allá</h3>
+                            <p>Huawei se está preparando para iniciar la fase de pruebas y validación de una nueva GPU para IA: el chip Ascend 910D
+                               El Departamento de Comercio ha dado un paso hacia delante en su ofensiva contra el negocio de Huawei fuera de China.</p>
+                            <a href="./noti/11.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>"Una computadora para cada hogar": la histórica entrevista de Bill Gates con la BBC en la que explicaba cómo Microsoft cambiaría el mundo</h3>
+                            <p>"Estamos en la era de la información", le dijo Gates al programa de la BBC en 1993.</p>
+                            <a href="./noti/12.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Meta se lanza a por la energía nuclear para sus centros de datos de IA: acaba de sellar un ambicioso acuerdo a 20 años</h3>
+                            <p>Meta ha firmado un acuerdo para alimentar algunos sus centros de datos con energía nuclear
+                               Microsoft, Google y Amazon también están apostando por este tipo de solución.</p>
+                            <a href="./noti/13.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Europa y España están sufriendo una ola de ciberataques. Así que Microsoft ha decidido tomar cartas en el asunto</h3>
+                            <p>Microsoft quiere ‘blindar’ a Europa frente a ciberataques con IA
+                               El nuevo programa es gratuito y se adapta a cada país
+                               España ya es uno de los grandes objetivos de los cibercriminales.</p>
+                            <a href="./noti/14.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>El dominio de China de las tierras raras no tiene nada que ver con la geografía: nace de 39 programas universitarios</h3>
+                            <p>China produce el 70% de las tierras raras y controla el 90% de la industria del procesado de estos elementos químicos
+                               El país liderado por Xi Jinping tiene 39 programas universitarios de química especializados en las tierras raras.</p>
+                            <a href="./noti/15.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>"La marca Tesla está rota": los números que confirman la crisis de la compañía de Elon Musk</h3>
+                            <p>Tesla sufrió una caída en sus ventas del 13% en el primer trimestre del año respecto al anterior.</p>
+                            <a href="./noti/16.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>La Switch 2 viene con un protector que muchos quitaríamos sin pensarlo. Nintendo tiene una advertencia para los usuarios</h3>
+                            <p>Nintendo recomienda no retirar la lámina de la pantalla en la nueva Switch 2
+                                Es una medida de seguridad para evitar que se dispersen fragmentos de cristal.</p>
+                            <a href="./noti/17.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>China se perfila como líder en tecnología médica: la UE está a un paso de vetarla en sus grandes licitaciones, según Reuters</h3>
+                            <p>El mercado chino de dispositivos médicos crece con apoyo estatal
+                                La UE ha respaldado restringir licitaciones públicas a empresas chinas.</p>
+                            <a href="./noti/18.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>España vuelve al podio con un dato que enciende alarmas: ya es el segundo país más atacado del mundo por cibercriminales</h3>
+                            <p>Secure&IT alerta sobre una exposición creciente por razones económicas, geográficas y políticas
+                               El Gobierno trabaja en un “escudo digital” para reforzar la ciberseguridad desde distintos frentes.</p>
+                            <a href="./noti/19.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separador -->
+                <div class="news-separator"></div>
+                
+                <!-- Noticia 6 -->
+                <div class="news-item" data-category="ia">
+                    <div class="news-content">
+                        <img src="assets/img/autos-autonomos.jpg" alt="Autos Autónomos">
+                        <div class="news-details">
+                            <h3>Los chips de NVIDIA siempre habían sido un arma negociadora de EEUU en su guerra comercial con China. Hasta hoy</h3>
+                            <p>No es que NVIDIA tenga ya un problema con el veto comercial a China: es que ahora ni China quiere contar con sus GPUs de IA.</p>
+                            <a href="./noti/20.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
     </section>
 
@@ -71,15 +378,9 @@
             <div class="footer-logo">
                 <a href="index.html">Tecno<span>News</span></a>
             </div>
-            <!-- Se eliminan las secciones de Enlaces y Redes Sociales -->
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 TecnoNews. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/news-loader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 </body>
 </html>
